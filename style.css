@@ -21,7 +21,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 80%;
+    width: 60%;
     max-width: 935px;
     height: 100vh;
 }
