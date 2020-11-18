@@ -42,7 +42,7 @@ body {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    width: 40%;
+    width: 80%;
     height: 40rem;
 }
 
@@ -110,6 +110,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 100%;
 }
 
 .get-app {
@@ -128,6 +129,10 @@ body {
     width: 8rem;
 }
 
+.group:nth-child(3) {
+    align-items: center;
+}
+
 /* media queries */
 
 @media (max-width: 1024px) {
@@ -143,6 +148,13 @@ body {
 
     .instagram-wrapper {
         width: 90%;
+    }
+}
+
+@media (max-width: 440px) {
+    .group {
+        border: 1px solid transparent;
+        background-color: #fafafa;
     }
 }
 
