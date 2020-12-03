@@ -19,10 +19,10 @@ Tema claro e tamanho normal:
 ![tema claro e tamanho normal](./img/full-layout.png)
 
 Tema claro e tamanho mobile:
-![tema claro e tamanho mobile](./img/mobile-full-layout.png)
+![tema claro e tamanho mobile](./img/mobile-layout.png)
 
 Tema escuro e tamanho normal:
 ![tema escuro e tamanho normal](./img/full-layout-dark.png)
 
 Tema escuro e tamanho mobile:
-![tema escuro e tamanho mobile](./img/mobile-full-layout-dark.png)
+![tema escuro e tamanho mobile](./img/mobile-layout-dark.png)
