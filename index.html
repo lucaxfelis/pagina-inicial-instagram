@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">  
 </head>
 <body>
+    <div class="dark-button">
+        <button onclick="darkMode()">Modo escuro</button>
+    </div>
     <main class="main-content">
         <div class="instagram-wrapper">
             <div class="instagram-phone">
@@ -21,7 +24,7 @@
             <div class="instagram-login">
                 <div class="group">
                     <img 
-                        class="instagram-logo"
+                        id="instagram-logo"
                         src="./img/instagram-logo.png"
                         alt="Logo do Instagram"
                     >
@@ -39,7 +42,7 @@
                     <p class="not-account"><a href="">Trocar de conta</a> ou <a href="">Cadastre-se</a></p>
                 </div>
                 <div class="get-the-app">
-                    <p class="get-app">Obtenha o aplicativo.</p>
+                    <p class="get-app dark-getapp">Obtenha o aplicativo.</p>
                     <div class="stores">
                         <a
                             href="https://apps.apple.com/app/instagram/id389801252?vt=lo"
@@ -58,7 +61,7 @@
             </div>
         </div>
     </main>
-    <nav>
+    <nav id="nav">
         <div class="container">
             <ul>
                 <li>
@@ -125,6 +128,24 @@
         </div>
         <p>© 2020 Instagram do Facebook</p>
     </footer>
+    <script>
+        function darkMode() {
+            var bodyElement = document.body;
+            bodyElement.classList.toggle("dark-bg");
+            var mainContentElement = document.getElementsByClassName("main-content")[0];
+            mainContentElement.classList.toggle("dark-bg");
+            var firstGroupElement = document.getElementsByClassName("group")[0];
+            var secondGroupElement = document.getElementsByClassName("group")[1];
+            firstGroupElement.classList.toggle("dark-group");
+            secondGroupElement.classList.toggle("dark-group");
+            var imgLogo = document.getElementById("instagram-logo");
+            imgLogo.classList.toggle("invert");
+            var navElement = document.getElementById("nav");
+            navElement.classList.toggle("dark-bg");
+            var idiomaElement = document.getElementById("idioma");
+            idiomaElement.classList.toggle("dark-bg");
+        }   
+    </script>
 </body>
 </html>
 

@@ -7,6 +7,21 @@
     font-size: 14px;
 }
 
+.dark-button {
+    float: right;
+    margin-top: 16px;
+    margin-right: 32px;
+}
+
+.dark-button button {
+    color: #ffffff;
+    font-weight: 700;
+    background-color: #0095f6;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    padding: 5px 9px;
+}
+
 body {
     background-color: #fafafa;
 }
@@ -19,6 +34,10 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
+}
+
+.dark-bg {
+    background-color: #131c21; !important
 }
 
 .instagram-wrapper {
@@ -34,7 +53,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40%;
+    width: 280px;
 }
 
 .instagram-phone img {
@@ -46,7 +65,7 @@ body {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    width: 80%;
+    width: 280px;
     height: 40rem;
 }
 
@@ -65,12 +84,21 @@ body {
     border: 1px solid #dbdbdb;
 }
 
+.dark-group {
+    background-color: #262d31;
+    border: 1px solid #dbdbdb;
+}
+
 .group:nth-child(1) {
     min-height: 19rem;
 }
 
-.instagram-logo {
+#instagram-logo {
     width: 175px;
+}
+
+.invert {
+    filter: invert(1);
 }
 
 .profile-photo {
@@ -121,6 +149,10 @@ body {
     margin: 10px 20px;
     font-weight: 300;
     text-align: center;
+}
+
+.dark-getapp {
+    color: #9fa2a5;
 }
 
 .stores {
@@ -209,12 +241,20 @@ footer select {
     .instagram-wrapper {
         width: 90%;
     }
+
+    footer, nav {
+        width: 90%;
+    }
+
 }
 
 @media (max-width: 440px) {
     .group {
         border: 1px solid transparent;
-        background-color: #fafafa;
+    }
+
+    footer, nav {
+        width: 90%;
     }
 }
 
